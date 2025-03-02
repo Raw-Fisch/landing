@@ -1,6 +1,10 @@
 import styled from "@emotion/styled";
 import {css} from "@emotion/react";
 import iconLinkedIn from "assets/icons/icon-linkedin.svg";
+import imgProfileSy from "assets/images/profile_sy.png";
+import imgProfileJh from "assets/images/profile_jh.png";
+import imgProfileYj from "assets/images/profile_yj.png";
+import imgProfileUj from "assets/images/profile_uj.png";
 
 const Wrapper = styled.div`
     justify-content: center;
@@ -60,25 +64,25 @@ const teamMembers = [
   {
     name: "Jihyung Lee",
     role: "Software Engineer",
-    imageUrl: "https://cdn.builder.io/api/v1/image/assets/TEMP/72561a42524e63db6fcfa6a1e79ef3c169ad7303b617363489de11a308aaf321?placeholderIfAbsent=true&apiKey=61415f98a9c04430a5650e6a03ff1614",
+    imageUrl: imgProfileJh,
     linkedInUrl: "https://www.linkedin.com/in/jihyunglee"
   },
   {
     name: "Soyeon Lee",
     role: "Business Strategy Consultant",
-    imageUrl: "https://cdn.builder.io/api/v1/image/assets/TEMP/403b3faf2c75e3a825086465d930e4378163997d927d37568c730f05b28d9fbc?placeholderIfAbsent=true&apiKey=61415f98a9c04430a5650e6a03ff1614",
+    imageUrl: imgProfileSy,
     linkedInUrl: "https://www.linkedin.com/in/soyeon-lee-3949a5117"
   },
   {
     name: "Yeonji Kim",
     role: "Data Analyst",
-    imageUrl: "https://cdn.builder.io/api/v1/image/assets/TEMP/5dc6ecef57724824f005884d26cb18cd450dbf663a4ec38daadde3bfcd742a35?placeholderIfAbsent=true&apiKey=61415f98a9c04430a5650e6a03ff1614",
+    imageUrl: imgProfileYj,
     linkedInUrl: "https://www.linkedin.com/in/yeonji-kim-11a9b1195"
   },
   {
     name: "Yu-jeong Kang",
     role: "Product Marketing Manager",
-    imageUrl: "https://cdn.builder.io/api/v1/image/assets/TEMP/eae72d946a6c72d378e80819715a5ba8d8c4936331ba1aae92eb6aaf4ccb3715?placeholderIfAbsent=true&apiKey=61415f98a9c04430a5650e6a03ff1614",
+    imageUrl: imgProfileUj,
     linkedInUrl: "https://www.linkedin.com/in/yujeon9kang"
   },
 ];
@@ -108,6 +112,7 @@ const imageStyles = css`
   object-position: center;
   width: 100px;
   max-width: 100%;
+    filter: grayscale(100%);
 `;
 
 const nameStyles = css`
